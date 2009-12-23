@@ -30,6 +30,9 @@ int main (void)
 	/* PortD is used for input	*/
 	DDRD = 0x00;
 
+	/* Enable the pull ups		*/
+	PORTD = 0xFF;
+
 	_delay_ms(1000);
 
 	/* Initialise output port	*/
